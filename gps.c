@@ -11,9 +11,9 @@
 
 char buffer1[256], buffer2[256], *fields[16];
 char* incoming = buffer1;
-char* processing = buffer2;		//might need volatile?
+char* processing = buffer2;		
 
-volatile int count = 0;					//might not need volatile?
+volatile int count = 0;					
 
 volatile bool message_ready = 0;
 
@@ -109,7 +109,7 @@ int main()
 
     SIM->SCGC4 |= (1 << 11);		//UART1 clocking
 
-    UART1->BDH = 0;					//upper bits of baud divisor -> unused here
+    UART1->BDH = 0;				//upper bits of baud divisor -> unused on this module
     UART1->BDL = 156;				//baud divisor -> maybe need to change something if we missing characters
     UART1->C2 |= (1 << 2);			//enable UART1 receive
 
