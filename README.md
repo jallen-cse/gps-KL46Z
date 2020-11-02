@@ -1,2 +1,2 @@
 # gps-KL46Z
-Short library of functions for interfacing with GlobalTop Technology Inc. FGPMMOPA6H stand-alone GPS module.
+Short library of functions for interfacing NXP FRDM-KL46Z boards with a GlobalTop Technology FGPMMOPA6H stand-alone GPS module.
